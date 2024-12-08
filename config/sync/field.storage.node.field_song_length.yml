@@ -1,0 +1,20 @@
+uuid: a80c5443-2919-4847-8cba-09d2cdd61c58
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_song_length
+field_name: field_song_length
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

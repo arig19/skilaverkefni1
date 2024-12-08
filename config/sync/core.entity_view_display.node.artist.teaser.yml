@@ -1,0 +1,34 @@
+uuid: 75c60060-4d36-4056-b560-895f97e78892
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.artist.body
+    - field.field.node.artist.field_artist_description
+    - field.field.node.artist.field_artist_disbandment_date
+    - field.field.node.artist.field_artist_foundation_date
+    - field.field.node.artist.field_artist_profile_image
+    - field.field.node.artist.field_artist_website_link
+    - field.field.node.artist.field_band_members
+    - node.type.artist
+  module:
+    - user
+id: node.artist.teaser
+targetEntityType: node
+bundle: artist
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_artist_description: true
+  field_artist_disbandment_date: true
+  field_artist_foundation_date: true
+  field_artist_profile_image: true
+  field_artist_website_link: true
+  field_band_members: true

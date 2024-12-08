@@ -1,0 +1,18 @@
+uuid: d384189c-5137-4633-bc1d-3a2310f72ab3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.song
+id: node.song.title
+field_name: title
+entity_type: node
+bundle: song
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

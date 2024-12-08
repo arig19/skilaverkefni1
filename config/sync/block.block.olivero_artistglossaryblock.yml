@@ -1,0 +1,33 @@
+uuid: d9bc4829-c9eb-4954-821f-b9175e25f81b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:84a12272-a96c-4730-8507-bdf60b908ee6'
+  module:
+    - block_content
+    - node
+  theme:
+    - olivero
+id: olivero_artistglossaryblock
+theme: olivero
+region: header
+weight: -8
+provider: null
+plugin: 'block_content:84a12272-a96c-4730-8507-bdf60b908ee6'
+settings:
+  id: 'block_content:84a12272-a96c-4730-8507-bdf60b908ee6'
+  label: 'Artist glossary block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      artist: artist

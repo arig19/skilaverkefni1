@@ -1,0 +1,21 @@
+uuid: 51d83a37-2e0f-47cd-b803-e407f2eb73b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ad_shape
+    - node.type.ad
+  module:
+    - options
+id: node.ad.field_ad_shape
+field_name: field_ad_shape
+entity_type: node
+bundle: ad
+label: 'Ad shape'
+description: 'Select the shape of the ad: Banner Wide, Banner Tall or Full Width'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

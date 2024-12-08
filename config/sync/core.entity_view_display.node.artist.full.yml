@@ -1,0 +1,91 @@
+uuid: c2f5f19f-fb78-4c86-b181-65a02a649fe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.artist.body
+    - field.field.node.artist.field_artist_description
+    - field.field.node.artist.field_artist_disbandment_date
+    - field.field.node.artist.field_artist_foundation_date
+    - field.field.node.artist.field_artist_profile_image
+    - field.field.node.artist.field_artist_website_link
+    - field.field.node.artist.field_band_members
+    - node.type.artist
+  module:
+    - datetime
+    - link
+    - text
+    - user
+id: node.artist.full
+targetEntityType: node
+bundle: artist
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_artist_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_artist_disbandment_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_artist_foundation_date:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_year
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_artist_profile_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_artist_website_link:
+    type: link
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_band_members:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

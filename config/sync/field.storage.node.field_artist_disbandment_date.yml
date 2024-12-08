@@ -1,0 +1,20 @@
+uuid: cda667cf-fab6-4f2d-b0e5-b2bcc619400c
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_artist_disbandment_date
+field_name: field_artist_disbandment_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

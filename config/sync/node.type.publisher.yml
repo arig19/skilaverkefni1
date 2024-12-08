@@ -1,0 +1,18 @@
+uuid: 2e2cc5c4-5622-4500-a3d4-0fb788206f32
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Publisher
+type: publisher
+description: 'Use <em>Publisher</em> to show who is responsible for releasing albums or songs, including details like name, logo, description, foundation date and website link.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

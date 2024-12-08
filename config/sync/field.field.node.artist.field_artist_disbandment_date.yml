@@ -1,0 +1,21 @@
+uuid: b85ccc07-f097-41f2-b2ad-78848f5f34db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_artist_disbandment_date
+    - node.type.artist
+  module:
+    - datetime
+id: node.artist.field_artist_disbandment_date
+field_name: field_artist_disbandment_date
+entity_type: node
+bundle: artist
+label: 'Artist disbandment date'
+description: 'Provide description when this artist was disbanded'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

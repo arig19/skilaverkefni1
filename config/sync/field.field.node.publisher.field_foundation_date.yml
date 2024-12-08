@@ -1,0 +1,21 @@
+uuid: 2988630d-f3e1-44dc-a70d-b33c652d9220
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foundation_date
+    - node.type.publisher
+  module:
+    - datetime
+id: node.publisher.field_foundation_date
+field_name: field_foundation_date
+entity_type: node
+bundle: publisher
+label: 'Foundation date'
+description: 'Provide the publisher foundation date'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

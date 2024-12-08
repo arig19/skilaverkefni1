@@ -1,0 +1,26 @@
+uuid: 6e7a33a8-0c41-413d-8b1b-c845385c4180
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publisher_description
+    - filter.format.basic_html
+    - filter.format.plain_text
+    - node.type.publisher
+  module:
+    - text
+id: node.publisher.field_publisher_description
+field_name: field_publisher_description
+entity_type: node
+bundle: publisher
+label: 'Publisher description'
+description: 'Provide a detailed description about the publisher'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - plain_text
+field_type: text_long

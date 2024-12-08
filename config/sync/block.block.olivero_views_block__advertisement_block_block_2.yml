@@ -1,0 +1,42 @@
+uuid: 0b0b8876-d57b-4fdd-b035-49a527e526cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.advertisement_block
+  module:
+    - node
+    - user
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__advertisement_block_block_2
+theme: olivero
+region: sidebar
+weight: -8
+provider: null
+plugin: 'views_block:advertisement_block-block_2'
+settings:
+  id: 'views_block:advertisement_block-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      content_editor: content_editor
+      administrator: administrator
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      ad: ad

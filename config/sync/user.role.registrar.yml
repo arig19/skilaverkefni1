@@ -1,0 +1,90 @@
+uuid: d9852a8c-05db-45b0-8e4a-a206c84b102f
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.ad
+    - node.type.album
+    - node.type.article
+    - node.type.artist
+    - node.type.page
+    - node.type.publisher
+    - node.type.song
+    - taxonomy.vocabulary.genre
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - media
+    - node
+    - taxonomy
+id: registrar
+label: Registrar
+weight: 4
+is_admin: null
+permissions:
+  - 'create ad content'
+  - 'create album content'
+  - 'create article content'
+  - 'create artist content'
+  - 'create audio media'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
+  - 'create page content'
+  - 'create publisher content'
+  - 'create remote_video media'
+  - 'create song content'
+  - 'create terms in genre'
+  - 'create terms in tags'
+  - 'create video media'
+  - 'delete media'
+  - 'delete own ad content'
+  - 'delete own album content'
+  - 'delete own article content'
+  - 'delete own artist content'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own page content'
+  - 'delete own publisher content'
+  - 'delete own remote_video media'
+  - 'delete own song content'
+  - 'delete own video media'
+  - 'edit own ad content'
+  - 'edit own album content'
+  - 'edit own article content'
+  - 'edit own artist content'
+  - 'edit own audio media'
+  - 'edit own comments'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'edit own publisher content'
+  - 'edit own remote_video media'
+  - 'edit own song content'
+  - 'edit own video media'
+  - 'view ad revisions'
+  - 'view album revisions'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view all taxonomy revisions'
+  - 'view any audio media revisions'
+  - 'view any document media revisions'
+  - 'view any image media revisions'
+  - 'view any remote_video media revisions'
+  - 'view any video media revisions'
+  - 'view article revisions'
+  - 'view artist revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view publisher revisions'
+  - 'view song revisions'
+  - 'view term revisions in genre'
+  - 'view term revisions in tags'
+  - 'view vocabulary labels'

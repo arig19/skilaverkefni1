@@ -1,0 +1,19 @@
+uuid: f0a3a2f9-2305-407f-974f-ee3ba6140f7c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_album_song
+field_name: field_album_song
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,18 @@
+uuid: c0a4f243-6f10-4e52-8140-fa2654e049d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Ad
+type: ad
+description: 'Use <em>Ad</em> to manage ads, including image shape such as banner wide, banner tall, full width and a clickable link.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false
